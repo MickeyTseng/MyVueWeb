@@ -51,4 +51,8 @@
   text-align: center;
   line-height: 200px;
 }
+li {
+  text-align: left;
+  line-height: 4vh;
+}
 </style>

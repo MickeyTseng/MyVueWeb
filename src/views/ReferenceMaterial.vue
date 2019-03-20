@@ -98,10 +98,6 @@ ul {
   padding: 0;
   text-align: left;
 }
-li {
-  text-align: left;
-  line-height: 4vh;
-}
 a {
   color: #2894ff;
   text-decoration: none;

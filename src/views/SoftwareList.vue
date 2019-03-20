@@ -43,16 +43,12 @@
 </template>
 
 <script>
-import vsCodeIconimgUrl from "../img/icon/Visual_Studio _Code_icon.png";
-import chromeIconimgUrl from "../img/icon/Google_Chrome_icon.png";
-import nodeJsIconimgUrl from "../img/icon/Node.js_icon.png";
 export default {
-  name: "Des",
   data() {
     return {
-      vsCodeIcon: vsCodeIconimgUrl,
-      chromeIcon: chromeIconimgUrl,
-      nodeJsIcon: nodeJsIconimgUrl,
+      vsCodeIcon: require("@/img/icon/Visual_Studio _Code_icon.png"),
+      chromeIcon: require("@/img/icon/Google_Chrome_icon.png"),
+      nodeJsIcon: require("@/img/icon/Node.js_icon.png"),
       esList: "：VSCode代碼中提示錯誤。",
       vuetur: "：Vue開發的神器，格式化、代碼段等。",
       prettier: "：Code formatter，代碼格式化插件，可以自定義格式化的配置。",
@@ -80,9 +76,6 @@ h2 {
 ul {
   list-style-type: none;
   padding: 0;
-  text-align: left;
-}
-li {
   text-align: left;
 }
 a {

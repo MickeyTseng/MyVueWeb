@@ -29,6 +29,8 @@ ul {
   text-align: left;
 }
 a {
+  color: #42b983;
   text-decoration: none;
+  font-weight: normal;
 }
 </style>
