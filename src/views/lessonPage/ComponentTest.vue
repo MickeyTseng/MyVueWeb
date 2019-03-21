@@ -8,7 +8,12 @@
       <li>以quiButton.vue為範例</li>
       <li>class="qui-btn" 表示之後在調用建立這個按鈕時所需的標籤名</li>
       <li>當按鈕組件被初始化的時候，text自定義屬性會被綁定到span標籤中</li>
-      <img :src="componentTest_02" />
+      <highlight-code lang="vue">
+        &lt;template&gt; &lt;button&gt; &lt;span&gt; &#123; &#123;text&#125;
+        &#125;&lt;/span&gt; &lt;/button&gt; &lt;/template&gt; &lt;script&gt;
+        export default { props: { text: { default:"預設文字" } } };
+        &lt;/script&gt;
+      </highlight-code>
     </ul>
     <ul>
       <h2>如何調用?</h2>
@@ -17,9 +22,9 @@
       <li>之後只要在頁面上使用註冊的自定義標籤就可以得到一個</li>
       <qui-btn1></qui-btn1>
       <li>透過覆寫text的值改變顯示的文字</li>
-      <li>
-        <img :src="componentTest_04" />
-      </li>
+      <highlight-code lang="html">
+        &lt;qui-btn text="打什麼就顯示什麼"&gt;&lt;/qui-btn&gt;
+      </highlight-code>
       <qui-btn1 text="打什麼就顯示什麼"></qui-btn1>
       <h2>按鈕事件</h2>
       <li>先在按鈕組件設定預設事件</li>
@@ -27,15 +32,20 @@
       <li>之後在建立一個按鈕時就會預設自帶一個彈出的事件</li>
       <qui-btn1></qui-btn1>
       <li>同樣的可以透過覆寫來客製出需要的按鈕以及文字</li>
-      <img :src="componentTest_06" />
-      <qui-btn1 text="我可以彈出別的字" msg="msg=什麼我就彈出什麼"></qui-btn1>
+      <highlight-code lang="html">
+        &lt;qui-btn1 text="我可以彈出別的字"
+        msg="msg=什麼我就彈出什麼"&gt;&lt;/qui-btn&gt;
+      </highlight-code>
+      <li>
+        <qui-btn1 text="我可以彈出別的字" msg="msg=什麼我就彈出什麼"></qui-btn1>
+      </li>
       <li>也可以在頁面創建一個自定義的方法來讓按鈕進行綁定</li>
       <li>
         此時若需要觸發父組件的自定義事件則須寫上<font class="highlight"
           >this.$emit ('方法名稱')</font
         >
       </li>
-      <img :src="componentTest_07" />
+      <li><img :src="componentTest_07" /></li>
       <qui-btn2 text="父組件自定義方法1" v-on:btnClickEvent="doSth1"></qui-btn2>
       <qui-btn2 text="父組件自定義方法2" v-on:btnClickEvent="doSth2"></qui-btn2>
       <li>也可以給按鈕加圖標</li>
@@ -57,9 +67,7 @@ export default {
       componentTest_01: require("../../img/lesson/componentTest/componentTest_01.png"),
       componentTest_02: require("../../img/lesson/componentTest/componentTest_02.png"),
       componentTest_03: require("../../img/lesson/componentTest/componentTest_03.png"),
-      componentTest_04: require("../../img/lesson/componentTest/componentTest_04.png"),
       componentTest_05: require("../../img/lesson/componentTest/componentTest_05.png"),
-      componentTest_06: require("../../img/lesson/componentTest/componentTest_06.png"),
       componentTest_07: require("../../img/lesson/componentTest/componentTest_07.png"),
       demoico:
         "http://qzonestyle.gtimg.cn/aoi/sola/20170214175951_TA6qW1X7ob.png"

@@ -9,8 +9,10 @@
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
+    "highlight.js": "^9.15.6",
     "v-viewer": "^1.4.0",
     "vue": "^2.6.6",
+    "vue-highlight.js": "^3.1.0",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1"
   },
@@ -38,7 +40,9 @@
       "plugin:vue/essential",
       "@vue/prettier"
     ],
-    "rules": {},
+    "rules": {
+      "max-len":[1,200]
+    },
     "parserOptions": {
       "parser": "babel-eslint"
     }

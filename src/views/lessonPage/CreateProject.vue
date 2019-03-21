@@ -15,12 +15,16 @@
             Vue CLI
           </a>
         </li>
-        <h3>npm install -g @vue/cli</h3>
+        <highlight-code lang="shell">
+          npm install -g @vue/cli
+        </highlight-code>
       </ul>
       <h2>建立專案</h2>
       <ul>
         <li>在終端機輸入命令</li>
-        <h3>vue ui</h3>
+        <highlight-code lang="vue">
+          vue ui
+        </highlight-code>
         <li>
           此時<a :href="vueCliUrl"> Vue CLI </a>將會在瀏覽器開啟Vue項目管理器
         </li>
@@ -38,7 +42,12 @@
         <li><img :src="createProject_07" class="Screenshot" /></li>
       </ul>
       <h2>運行專案</h2>
-      <ul></ul>
+      <ul>
+        <highlight-code lang="html">
+          &lt;li id="23ewrty"&gt;<br />
+          &lt;li id="23ewrty"&gt;
+        </highlight-code>
+      </ul>
     </viewer>
   </div>
 </template>
