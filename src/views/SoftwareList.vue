@@ -5,7 +5,7 @@
     <ul>
       <li>
         <img :src="vsCodeIcon" />
-        <a href="https://code.visualstudio.com/Download" target="_blank">
+        <a :href="vsCodeUrl" target="_blank">
           Visual Studio Code
         </a>
       </li>
@@ -13,7 +13,7 @@
     <ul>
       <li>
         <img :src="nodeJsIcon" />
-        <a href="https://nodejs.org/en/" target="_blank">
+        <a :href="nodeJsUrl" target="_blank">
           Node.js
         </a>
       </li>
@@ -30,10 +30,7 @@
         {{ intelliSenseforCSS }}
       </li>
       <li>
-        <img :src="chromeIcon" /><a
-          href="https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd"
-          target="_blank"
-        >
+        <img :src="chromeIcon" /><a :href="vueJsDevtoolsUrl" target="_blank">
           Vue.js devtools
         </a>
         {{ vueJsdevTools }}
@@ -47,8 +44,12 @@ export default {
   data() {
     return {
       vsCodeIcon: require("@/img/icon/Visual_Studio _Code_icon.png"),
+      vsCodeUrl: "https://code.visualstudio.com/Download",
       chromeIcon: require("@/img/icon/Google_Chrome_icon.png"),
+      vueJsDevtoolsUrl:
+        "https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd",
       nodeJsIcon: require("@/img/icon/Node.js_icon.png"),
+      nodeJsUrl: "https://nodejs.org/en/",
       esList: "：VSCode代碼中提示錯誤。",
       vuetur: "：Vue開發的神器，格式化、代碼段等。",
       prettier: "：Code formatter，代碼格式化插件，可以自定義格式化的配置。",
@@ -62,7 +63,6 @@ export default {
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 h1 {
   font-weight: normal;

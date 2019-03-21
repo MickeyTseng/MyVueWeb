@@ -2,7 +2,7 @@
   <div id="app">
     <div id="header">
       <router-link to="/">
-        <img src="@/img/icon/Vue_icon.png" style="height: 30vh; width: 30vh;" />
+        <img :src="vueIconimgUrl" style="height: 30vh; width: 30vh;" />
       </router-link>
     </div>
     <div id="sidebar_left"></div>
@@ -13,7 +13,16 @@
     <div id="footer"></div>
   </div>
 </template>
-
+<script>
+export default {
+  name: "Des",
+  data() {
+    return {
+      vueIconimgUrl: require("@/img/icon/Vue_icon.png")
+    };
+  }
+};
+</script>
 <style>
 #header {
   text-align: center;

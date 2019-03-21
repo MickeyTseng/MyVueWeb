@@ -65,18 +65,14 @@
 </template>
 
 <script>
-import vueIconimgUrl from "@/img/icon/Vue_icon.png";
-import vsCodeIconimgUrl from "@/img/icon/Visual_Studio _Code_icon.png";
-import chromeIconimgUrl from "@/img/icon/Google_Chrome_icon.png";
-import nodeJsIconimgUrl from "@/img/icon/Node.js_icon.png";
 export default {
   name: "Des",
   data() {
     return {
-      vueIcon: vueIconimgUrl,
-      vsCodeIcon: vsCodeIconimgUrl,
-      chromeIcon: chromeIconimgUrl,
-      nodeJsIcon: nodeJsIconimgUrl
+      vueIconimgUrl: require("@/img/icon/Vue_icon.png"),
+      vsCodeIconimgUrl: require("@/img/icon/Vue_icon.png"),
+      chromeIconimgUrl: require("@/img/icon/Vue_icon.png"),
+      nodeJsIconimgUrl: require("@/img/icon/Vue_icon.png")
     };
   }
 };

@@ -40,11 +40,7 @@
       <qui-btn2 text="父組件自定義方法2" v-on:btnClickEvent="doSth2"></qui-btn2>
       <li>也可以給按鈕加圖標</li>
       <qui-btn2 text="我有圖標">
-        <img
-          slot="icon"
-          class="ico"
-          src="http://qzonestyle.gtimg.cn/aoi/sola/20170214175951_TA6qW1X7ob.png"
-        />
+        <img slot="icon" class="ico" :src="demoico" />
       </qui-btn2>
     </ul>
   </div>
@@ -64,7 +60,9 @@ export default {
       componentTest_04: require("../../img/lesson/componentTest/componentTest_04.png"),
       componentTest_05: require("../../img/lesson/componentTest/componentTest_05.png"),
       componentTest_06: require("../../img/lesson/componentTest/componentTest_06.png"),
-      componentTest_07: require("../../img/lesson/componentTest/componentTest_07.png")
+      componentTest_07: require("../../img/lesson/componentTest/componentTest_07.png"),
+      demoico:
+        "http://qzonestyle.gtimg.cn/aoi/sola/20170214175951_TA6qW1X7ob.png"
     };
   },
   components: {
