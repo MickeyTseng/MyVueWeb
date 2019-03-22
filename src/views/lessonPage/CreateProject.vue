@@ -43,10 +43,10 @@
       </ul>
       <h2>運行專案</h2>
       <ul>
-        <highlight-code lang="html">
-          &lt;li id="23ewrty"&gt;<br />
-          &lt;li id="23ewrty"&gt;
-        </highlight-code>
+        <li>在Vue cli service serve 頁面中 點擊運行</li>
+        <li>Service起成功後即可啟動app</li>
+        <li><img :src="createProject_08" class="Screenshot" /></li>
+        <li><img :src="createProject_09" class="Screenshot" /></li>
       </ul>
     </viewer>
   </div>
@@ -66,7 +66,8 @@ export default {
       createProject_05: require("@/img/lesson/createProject/createProject_05.png"),
       createProject_06: require("@/img/lesson/createProject/createProject_06.png"),
       createProject_07: require("@/img/lesson/createProject/createProject_07.png"),
-      createProject_08: require("@/img/lesson/createProject/createProject_08.png")
+      createProject_08: require("@/img/lesson/createProject/createProject_08.png"),
+      createProject_09: require("@/img/lesson/createProject/createProject_09.png")
     };
   }
 };

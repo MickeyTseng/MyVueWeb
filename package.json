@@ -40,9 +40,7 @@
       "plugin:vue/essential",
       "@vue/prettier"
     ],
-    "rules": {
-      "max-len":[1,200]
-    },
+    "rules": {},
     "parserOptions": {
       "parser": "babel-eslint"
     }

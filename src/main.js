@@ -7,7 +7,7 @@ import "viewerjs/dist/viewer.css";
 import VueHighlightJS from "vue-highlight.js";
 
 // 將需要用到的語言包載入進來
-import html from "highlight.js/lib/languages/html";
+import html from "highlight.js/lib/languages/xml"; //因語言包沒有html以xml代替
 import css from "highlight.js/lib/languages/css";
 import javascript from "highlight.js/lib/languages/javascript";
 import shell from "highlight.js/lib/languages/shell";
@@ -16,7 +16,7 @@ import vue from "vue-highlight.js/lib/languages/vue";
 //選擇要使用的程式碼主題
 // Find more: https://highlightjs.org/static/demo/
 
-import "highlight.js/styles/vs2015.css";
+import "@/css/vs2015.css";
 
 Vue.config.productionTip = false;
 
