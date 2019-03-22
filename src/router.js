@@ -7,6 +7,8 @@ import ReferenceMaterial from "./views/ReferenceMaterial.vue";
 import CreateProject from "./views/lessonPage/CreateProject.vue";
 import LessonList from "./views/lessonPage/LessonList.vue";
 import ComponentTest from "./views/lessonPage/ComponentTest.vue";
+import AxiosTest from "./views/lessonPage/AxiosTest.vue";
+
 Vue.use(Router);
 
 export default new Router({
@@ -51,6 +53,13 @@ export default new Router({
           component: ComponentTest,
           meta: {
             title: "組件練習"
+          }
+        },
+        {
+          path: "AxiosTest",
+          component: AxiosTest,
+          meta: {
+            title: "Axios"
           }
         }
       ]

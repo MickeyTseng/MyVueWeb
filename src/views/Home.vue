@@ -1,29 +1,38 @@
 <template>
   <div class="home">
     <h1>這是一個從"0"開始學習Vue的過程</h1>
-    <ul>
+    <ul v-for="item in itemList" :key="item.index">
       <li>
-        <router-link to="/softwareList">
-          <h2>軟體清單</h2>
-        </router-link>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <router-link to="/lesson/lessonList">
-          <h2>學習項目</h2>
-        </router-link>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <router-link to="/referenceMaterial">
-          <h2>參考網頁</h2>
+        <router-link :to="item.path">
+          <h2>{{ item.text }}</h2>
         </router-link>
       </li>
     </ul>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      itemList: [
+        {
+          text: "軟體清單",
+          path: "/softwareList"
+        },
+        {
+          text: "學習項目",
+          path: "/lesson/lessonList"
+        },
+        {
+          text: "參考網頁",
+          path: "/referenceMaterial"
+        }
+      ]
+    };
+  }
+};
+</script>
 
 <style scoped>
 h2 {

@@ -2,38 +2,19 @@
   <div>
     <h1>軟體清單</h1>
     <h2>必要類 :</h2>
-    <ul>
+    <ul v-for="necessary in necessaryList" :key="necessary.index">
       <li>
-        <img :src="vsCodeIcon" />
-        <a :href="vsCodeUrl" target="_blank">
-          Visual Studio Code
-        </a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <img :src="nodeJsIcon" />
-        <a :href="nodeJsUrl" target="_blank">
-          Node.js
+        <img :src="necessary.logo" />&nbsp;
+        <a :href="necessary.path" target="_blank">
+          {{ necessary.text }}
         </a>
       </li>
     </ul>
     <h2>插件類 :</h2>
-    <ul>
-      <li><img :src="vsCodeIcon" /> ESLint{{ esList }}</li>
-      <li><img :src="vsCodeIcon" /> Vuetur{{ vuetur }}</li>
-      <li><img :src="vsCodeIcon" /> Prettier{{ prettier }}</li>
-      <li><img :src="vsCodeIcon" /> Auto Close Tag{{ autoCloseTag }}</li>
-      <li><img :src="vsCodeIcon" /> Auto Rename Tag{{ autoRenameTag }}</li>
+    <ul v-for="plugin in pluginList" :key="plugin.index">
       <li>
-        <img :src="vsCodeIcon" /> IntelliSense for CSS class names
-        {{ intelliSenseforCSS }}
-      </li>
-      <li>
-        <img :src="chromeIcon" /><a :href="vueJsDevtoolsUrl" target="_blank">
-          Vue.js devtools
-        </a>
-        {{ vueJsdevTools }}
+        <img :src="plugin.logo" />&nbsp;{{ plugin.text }} :
+        {{ plugin.depiction }}
       </li>
     </ul>
   </div>
@@ -43,21 +24,62 @@
 export default {
   data() {
     return {
-      vsCodeIcon: require("@/img/icon/Visual_Studio _Code_icon.png"),
-      vsCodeUrl: "https://code.visualstudio.com/Download",
-      chromeIcon: require("@/img/icon/Google_Chrome_icon.png"),
-      vueJsDevtoolsUrl:
-        "https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd",
-      nodeJsIcon: require("@/img/icon/Node.js_icon.png"),
-      nodeJsUrl: "https://nodejs.org/en/",
-      esList: "：VSCode代碼中提示錯誤。",
-      vuetur: "：Vue開發的神器，格式化、代碼段等。",
-      prettier: "：Code formatter，代碼格式化插件，可以自定義格式化的配置。",
-      autoCloseTag: "：在打開標簽並且鍵入 </ 的時候，能自動補全要閉合的標簽。",
-      autoRenameTag: "：在修改開始（結束）標籤的時候修改對應的標籤。",
-      vueJsdevTools:
-        "：Chrome開發vue的套件，可以檢查組件的資料及事件與資料變化。",
-      intelliSenseforCSS: "：CSS 类名补全。"
+      necessaryList: [
+        {
+          logo: require("@/img/icon/Visual_Studio _Code_icon.png"),
+          text: "Visual Studio Code",
+          path: "https://code.visualstudio.com/Download"
+        },
+        {
+          logo: require("@/img/icon/Node.js_icon.png"),
+          text: "Node.js",
+          path: "https://nodejs.org/en/"
+        }
+      ],
+      pluginList: [
+        {
+          logo: require("@/img/icon/Visual_Studio _Code_icon.png"),
+          text: "ESLint",
+          depiction: "VSCode代碼中提示錯誤。"
+        },
+        {
+          logo: require("@/img/icon/Visual_Studio _Code_icon.png"),
+          text: "Vuetur",
+          depiction: "Vue開發的神器，格式化、代碼段等。"
+        },
+        {
+          logo: require("@/img/icon/Visual_Studio _Code_icon.png"),
+          text: "Prettier",
+          depiction: "Code formatter，代碼格式化插件，可以自定義格式化的配置。"
+        },
+        {
+          logo: require("@/img/icon/Visual_Studio _Code_icon.png"),
+          text: "Auto Close Tag",
+          depiction: "在打開標簽並且鍵入 </ 的時候，能自動補全要閉合的標簽。"
+        },
+        {
+          logo: require("@/img/icon/Visual_Studio _Code_icon.png"),
+          text: "Auto Rename Tag",
+          depiction: "在修改開始（結束）標籤的時候修改對應的標籤。"
+        },
+        {
+          logo: require("@/img/icon/Visual_Studio _Code_icon.png"),
+          text: "IntelliSense for CSS class names ",
+          depiction: "CSS 類名補全。"
+        },
+        {
+          logo: require("@/img/icon/Visual_Studio _Code_icon.png"),
+          text: "intelliSenseforCSS",
+          depiction: "CSS 類名補全。"
+        },
+        {
+          logo: require("@/img/icon/Google_Chrome_icon.png"),
+          text: "Vue.js devtools",
+          path:
+            "https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd",
+          depiction: "Chrome開發vue的套件，可以檢查組件的資料及事件與資料變化。"
+        }
+      ]
     };
   }
 };

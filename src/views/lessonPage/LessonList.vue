@@ -1,16 +1,9 @@
 <template>
-  <div id="LessonList">
+  <div>
     <ul>
-      <li>
-        <router-link to="/lesson/createProject">
-          <h2>建立第一個Vue專案</h2>
-        </router-link>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <router-link to="/lesson/ComponentTest">
-          <h2>組件練習</h2>
+      <li v-for="lesson in lessonList" :key="lesson.index">
+        <router-link :to="lesson.path">
+          <h2>{{ lesson.text }}</h2>
         </router-link>
       </li>
     </ul>
@@ -18,6 +11,28 @@
   </div>
 </template>
 
+<script>
+export default {
+  data() {
+    return {
+      lessonList: [
+        {
+          text: "建立第一個Vue專案",
+          path: "/lesson/createProject"
+        },
+        {
+          text: "組件練習",
+          path: "/lesson/componentTest"
+        },
+        {
+          text: "Axios",
+          path: "/lesson/AxiosTest"
+        }
+      ]
+    };
+  }
+};
+</script>
 <style scoped>
 h2 {
   font-weight: normal;

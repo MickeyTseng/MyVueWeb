@@ -5,7 +5,7 @@
     <ul>
       <li>
         <img :src="vueIcon" />
-        <a href="https://cn.vuejs.org/" target="_blank">
+        <a :href="vueWebUrl" target="_blank">
           Vue.js
         </a>
       </li>
@@ -66,13 +66,10 @@
 
 <script>
 export default {
-  name: "Des",
   data() {
     return {
-      vueIconimgUrl: require("@/img/icon/Vue_icon.png"),
-      vsCodeIconimgUrl: require("@/img/icon/Vue_icon.png"),
-      chromeIconimgUrl: require("@/img/icon/Vue_icon.png"),
-      nodeJsIconimgUrl: require("@/img/icon/Vue_icon.png")
+      vueIcon: require("@/img/icon/Vue_icon.png"),
+      vueWebUrl: "https://cn.vuejs.org/"
     };
   }
 };

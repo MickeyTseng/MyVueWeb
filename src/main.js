@@ -2,6 +2,8 @@ import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
 import store from "./store";
+import axios from "axios"; //載入 axios
+import VueAxios from "vue-axios"; //載入 vue-axios
 import viewer from "v-viewer";
 import "viewerjs/dist/viewer.css";
 import VueHighlightJS from "vue-highlight.js";
@@ -19,6 +21,8 @@ import vue from "vue-highlight.js/lib/languages/vue";
 import "@/css/vs2015.css";
 
 Vue.config.productionTip = false;
+
+Vue.use(VueAxios, axios); //啟用 vue-axios, axios
 
 router.beforeEach((to, from, next) => {
   //路由發生變化修改頁面Title
