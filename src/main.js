@@ -3,10 +3,10 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 import axios from "axios"; //載入 axios
-import VueAxios from "vue-axios"; //載入 vue-axios
+import vueAxios from "vue-axios"; //載入 vue-axios
 import viewer from "v-viewer";
 import "viewerjs/dist/viewer.css";
-import VueHighlightJS from "vue-highlight.js";
+import vueHighlightJS from "vue-highlight.js";
 
 // 將需要用到的語言包載入進來
 import html from "highlight.js/lib/languages/xml"; //因語言包沒有html以xml代替
@@ -22,15 +22,7 @@ import "@/css/vs2015.css";
 
 Vue.config.productionTip = false;
 
-Vue.use(VueAxios, axios); //啟用 vue-axios, axios
-
-router.beforeEach((to, from, next) => {
-  //路由發生變化修改頁面Title
-  if (to.meta.title) {
-    document.title = to.meta.title;
-  }
-  next();
-});
+Vue.use(vueAxios, axios); //啟用 vue-axios, axios
 
 new Vue({
   router,
@@ -45,7 +37,7 @@ Vue.use(viewer, {
   }
 });
 
-Vue.use(VueHighlightJS, {
+Vue.use(vueHighlightJS, {
   // 填入需要的語言類型
   languages: {
     html,
@@ -54,4 +46,12 @@ Vue.use(VueHighlightJS, {
     vue,
     shell
   }
+});
+
+router.beforeEach((to, from, next) => {
+  //路由發生變化修改頁面Title
+  if (to.meta.title) {
+    document.title = to.meta.title;
+  }
+  next();
 });
