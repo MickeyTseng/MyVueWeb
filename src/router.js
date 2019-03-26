@@ -8,7 +8,7 @@ import CreateProject from "./views/lessonPage/CreateProject.vue";
 import LessonList from "./views/lessonPage/LessonList.vue";
 import ComponentTest from "./views/lessonPage/ComponentTest.vue";
 import AxiosTest from "./views/lessonPage/AxiosTest.vue";
-
+import ScrollLoading from "./views/lessonPage/ScrollLoading.vue";
 Vue.use(Router);
 
 export default new Router({
@@ -60,6 +60,13 @@ export default new Router({
           component: AxiosTest,
           meta: {
             title: "Axios"
+          }
+        },
+        {
+          path: "ScrollLoading",
+          component: ScrollLoading,
+          meta: {
+            title: "ScrollLoading"
           }
         }
       ]

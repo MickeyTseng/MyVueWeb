@@ -1,5 +1,5 @@
 <template>
-  <div class="Text">
+  <div id="text">
     <router-link to="/lesson/lessonList">
       <h1>學習項目</h1>
     </router-link>
@@ -15,5 +15,11 @@ a {
   color: #42b983;
   text-decoration: none;
   font-weight: normal;
+}
+#text {
+  margin-bottom: 10vh;
+  padding-right: 5vh;
+  padding-bottom: 5vh;
+  padding-left: 5vh;
 }
 </style>

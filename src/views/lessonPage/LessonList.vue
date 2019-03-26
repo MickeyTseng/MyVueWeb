@@ -27,6 +27,10 @@ export default {
         {
           text: "Axios",
           path: "/lesson/AxiosTest"
+        },
+        {
+          text: "ScrollLoading",
+          path: "/lesson/ScrollLoading"
         }
       ]
     };
