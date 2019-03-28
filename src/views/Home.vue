@@ -37,7 +37,7 @@ export default {
 <style scoped>
 h2 {
   font-weight: normal;
-  font-size: 4vh;
+  font-size: 25px;
   color: #42b983;
 }
 ul {

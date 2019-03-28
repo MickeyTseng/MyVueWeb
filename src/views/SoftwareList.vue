@@ -68,11 +68,6 @@ export default {
           depiction: "CSS 類名補全。"
         },
         {
-          logo: require("@/img/icon/Visual_Studio _Code_icon.png"),
-          text: "intelliSenseforCSS",
-          depiction: "CSS 類名補全。"
-        },
-        {
           logo: require("@/img/icon/Google_Chrome_icon.png"),
           text: "Vue.js devtools",
           path:

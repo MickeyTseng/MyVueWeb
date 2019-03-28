@@ -52,7 +52,7 @@ export default {
   border-width: 1px;
   border-color: rgb(177, 226, 206);
   border-style: solid;
-  font-size: 2vh;
+  font-size: 20px;
   padding: 5vh;
 }
 #footer {
