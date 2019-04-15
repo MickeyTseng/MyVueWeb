@@ -68,7 +68,7 @@
 export default {
   data() {
     return {
-      vueIcon: require("@/img/icon/Vue_icon.png"),
+      vueIcon: require("@/assets/icon/Vue_icon.png"),
       vueWebUrl: "https://cn.vuejs.org/"
     };
   }

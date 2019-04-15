@@ -26,49 +26,49 @@ export default {
     return {
       necessaryList: [
         {
-          logo: require("@/img/icon/Visual_Studio _Code_icon.png"),
+          logo: require("@/assets/icon/Visual_Studio _Code_icon.png"),
           text: "Visual Studio Code",
           path: "https://code.visualstudio.com/Download"
         },
         {
-          logo: require("@/img/icon/Node.js_icon.png"),
+          logo: require("@/assets/icon/Node.js_icon.png"),
           text: "Node.js",
           path: "https://nodejs.org/en/"
         }
       ],
       pluginList: [
         {
-          logo: require("@/img/icon/Visual_Studio _Code_icon.png"),
+          logo: require("@/assets/icon/Visual_Studio _Code_icon.png"),
           text: "ESLint",
           depiction: "VSCode代碼中提示錯誤。"
         },
         {
-          logo: require("@/img/icon/Visual_Studio _Code_icon.png"),
+          logo: require("@/assets/icon/Visual_Studio _Code_icon.png"),
           text: "Vuetur",
           depiction: "Vue開發的神器，格式化、代碼段等。"
         },
         {
-          logo: require("@/img/icon/Visual_Studio _Code_icon.png"),
+          logo: require("@/assets/icon/Visual_Studio _Code_icon.png"),
           text: "Prettier",
           depiction: "Code formatter，代碼格式化插件，可以自定義格式化的配置。"
         },
         {
-          logo: require("@/img/icon/Visual_Studio _Code_icon.png"),
+          logo: require("@/assets/icon/Visual_Studio _Code_icon.png"),
           text: "Auto Close Tag",
           depiction: "在打開標簽並且鍵入 </ 的時候，能自動補全要閉合的標簽。"
         },
         {
-          logo: require("@/img/icon/Visual_Studio _Code_icon.png"),
+          logo: require("@/assets/icon/Visual_Studio _Code_icon.png"),
           text: "Auto Rename Tag",
           depiction: "在修改開始（結束）標籤的時候修改對應的標籤。"
         },
         {
-          logo: require("@/img/icon/Visual_Studio _Code_icon.png"),
+          logo: require("@/assets/icon/Visual_Studio _Code_icon.png"),
           text: "IntelliSense for CSS class names ",
           depiction: "CSS 類名補全。"
         },
         {
-          logo: require("@/img/icon/Google_Chrome_icon.png"),
+          logo: require("@/assets/icon/Google_Chrome_icon.png"),
           text: "Vue.js devtools",
           path:
             "https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd",

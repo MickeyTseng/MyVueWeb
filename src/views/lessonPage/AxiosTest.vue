@@ -148,7 +148,7 @@ export default {
         email: null,
         dob: null,
         phone: null,
-        picture: require("@/img/lesson/axiosTest/axiosTest_01.jpg")
+        picture: require("@/assets/lesson/axiosTest/axiosTest_01.jpg")
       }
     };
   },

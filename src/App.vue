@@ -18,7 +18,7 @@ export default {
   name: "Des",
   data() {
     return {
-      vueIconimgUrl: require("@/img/icon/Vue_icon.png")
+      vueIconimgUrl: require("@/assets/icon/Vue_icon.png")
     };
   }
 };

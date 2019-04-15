@@ -29,8 +29,12 @@ export default {
           path: "/lesson/AxiosTest"
         },
         {
-          text: "ScrollLoading",
-          path: "/lesson/ScrollLoading"
+          text: "環境變數與專案打包",
+          path: "/lesson/EnvironmentalVariable"
+        },
+        {
+          text: "Jenkins自動佈署Vue",
+          path: "/lesson/Jenkins"
         }
       ]
     };

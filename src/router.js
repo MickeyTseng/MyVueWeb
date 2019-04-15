@@ -8,7 +8,8 @@ import CreateProject from "./views/lessonPage/CreateProject.vue";
 import LessonList from "./views/lessonPage/LessonList.vue";
 import ComponentTest from "./views/lessonPage/ComponentTest.vue";
 import AxiosTest from "./views/lessonPage/AxiosTest.vue";
-import ScrollLoading from "./views/lessonPage/ScrollLoading.vue";
+import EnvironmentalVariable from "./views/lessonPage/EnvironmentalVariable.vue";
+import Jenkins from "./views/lessonPage/Jenkins.vue";
 Vue.use(Router);
 
 export default new Router({
@@ -63,10 +64,17 @@ export default new Router({
           }
         },
         {
-          path: "ScrollLoading",
-          component: ScrollLoading,
+          path: "EnvironmentalVariable",
+          component: EnvironmentalVariable,
           meta: {
-            title: "ScrollLoading"
+            title: "環境變數與專案打包"
+          }
+        },
+        {
+          path: "Jenkins",
+          component: Jenkins,
+          meta: {
+            title: "Jenkins自動佈署Vue"
           }
         }
       ]

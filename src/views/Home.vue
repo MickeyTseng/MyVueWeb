@@ -30,6 +30,12 @@ export default {
         }
       ]
     };
+  },
+  methods: {
+    test() {
+      // eslint-disable-next-line no-console
+      console.log(process.env.VUE_APP_MODE);
+    }
   }
 };
 </script>
