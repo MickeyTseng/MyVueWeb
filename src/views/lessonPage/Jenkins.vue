@@ -17,7 +17,7 @@
         <img :src="Jenkins_04" class="screenShot" />
         <h3>點擊”NodeJS 安裝…”</h3>
         <img :src="Jenkins_05" class="screenShot" />
-        <h3>設定所需 Node 版本</h3>
+        <h3>設定所需 Node.js 版本</h3>
         <img :src="Jenkins_06" class="screen" />
       </ul>
       <h2>新增 Jenkins 作業</h2>
