@@ -25,8 +25,8 @@
         <h3>新增作業</h3>
         <img :src="Jenkins_07" />
         <h3>相關參考配置</h3>
-        <img :src="Jenkins_08" class="screen" />
-        <img :src="Jenkins_09" class="webScreen" />
+        <li><img :src="Jenkins_08" class="screen" /></li>
+        <li><img :src="Jenkins_09" class="webScreen" /></li>
       </ul>
     </viewer>
   </div>
@@ -87,14 +87,14 @@ li {
 }
 .screen {
   width: 64.3vh;
-  height: 36vh;
+  height: 70vh;
 }
 .screenShot {
-  width: 600px;
-  height: 65px;
+  width: 64.3vh;
+  height: 10.5vh;
 }
 .webScreen {
   width: 64.3vh;
-  height: 72vh;
+  height: 142vh;
 }
 </style>

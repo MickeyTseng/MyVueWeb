@@ -41,9 +41,12 @@ export default {
 </script>
 
 <style scoped>
+h1 {
+  font-size: 5vh;
+}
 h2 {
   font-weight: normal;
-  font-size: 25px;
+  font-size: 4vh;
   color: #42b983;
 }
 ul {

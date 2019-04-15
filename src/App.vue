@@ -28,16 +28,16 @@ export default {
   text-align: center;
 }
 #app {
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
 }
 #sidebar_left {
-  width: 15%;
+  width: 5vh;
   text-align: center;
   float: left;
 }
 #sidebar_right {
-  width: 15%;
+  width: 5vh;
   text-align: center;
   float: right;
 }
@@ -52,7 +52,7 @@ export default {
   border-width: 1px;
   border-color: rgb(177, 226, 206);
   border-style: solid;
-  font-size: 20px;
+  font-size: 3vh;
   padding: 5vh;
 }
 #footer {

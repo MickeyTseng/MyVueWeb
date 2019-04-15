@@ -124,7 +124,7 @@ ul {
 }
 li {
   list-style: none;
-  margin: 4px;
+  margin: 1vh;
 }
 .screenShot {
   width: 64.3vh;
