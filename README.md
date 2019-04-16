@@ -1,4 +1,4 @@
-# myvueweb
+# VueStartFromZero
 
 ## Project setup
 ```
