@@ -18,7 +18,7 @@ import vue from "vue-highlight.js/lib/languages/vue";
 //選擇要使用的程式碼主題
 // Find more: https://highlightjs.org/static/demo/
 
-import "@/css/vs2015.css";
+import "@/assets/css/vs2015.css";
 
 Vue.config.productionTip = false;
 
